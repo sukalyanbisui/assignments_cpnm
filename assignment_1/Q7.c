@@ -6,20 +6,25 @@
 #include<stdlib.h>
 
 
-int main(){
-  int x = 12;
- int y = 345;
-  int count = 0;
- while(y>0){
-	 y = y % 10;
-	count++;
-	y /= 10;			
-	
-}
- int d = x*pow(10,count) + y;
- printf("%d",d);
-return 0;
+int combine(int x, int y){
+	int t = 1;
+	while(t<=y){
+		t *= 10;
+	}
+	return x * t + y;
 }
 
+int main(){
+  int x,y,z,times = 1;
+  printf("enter the first number: ");
+  scanf("%d" , &x);
+   printf("enter the second number: ");
+  scanf("%d" , &y);
+  z = combine(x,y);
+  printf("The third number is %d\n", z);
+
+
+return 0;
+}
 
 
