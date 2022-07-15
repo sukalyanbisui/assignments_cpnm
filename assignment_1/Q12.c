@@ -1,7 +1,7 @@
 /*12. If the marks obtained by a student in five different subjects are input through the keyboard, find out the aggregate marks and percentage marks obtained by the student. Also determine the number grade. Assume that the maximum marks that can be obtained by a student in each subject is 100. Grade A = 91 to 100, B = 81 to 90, C = 71 – 80, D = 61 to 70, E = 51 to 60, F = less than 50.
  Input error should be checked.*/
 
-  #include<stdio.h>
+ #include<stdio.h>
 
 int main(){
 	 int a,b,c,d,e,f;
